@@ -8,7 +8,7 @@
 <meta property="og:title" content="Frizon Advogados | Conheça Seus Direitos">
 <meta property="og:description" content="Isenção de Imposto de Renda por doença grave, defesa em multas de Conselhos Profissionais e isenção de IPVA para pessoas com TEA no Paraná.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="logo.png">
+<meta property="og:image" content="logo-azul.png">
 <link rel="icon" type="image/png" href="favicon.png">
 <meta name="theme-color" content="#07122E">
 
@@ -36,11 +36,11 @@
     --ink-500:#5B5F6A;
     --ink-400:#767B87;
     --paper-0:#FFFFFF;
-    --paper-50:#FBF9F5;
-    --paper-100:#F3EEE3;
-    --line:#E7E0D2;
+    --paper-50:#F7F9FC;
+    --paper-100:#EEF1F6;
+    --line:#E1E6EE;
     --line-dark:#33363E;
-    --shadow:0 20px 50px -25px rgba(20,17,7,0.35);
+    --shadow:0 20px 50px -25px rgba(7,18,46,0.35);
     --radius:16px;
     --container:1160px;
   }
@@ -135,10 +135,6 @@
   /* Hero */
   .hero{
     position:relative;
-    background-image:url('novo-bg-hero.png');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
     background-color:var(--paper-50);
     padding:64px 0 90px;
     border-bottom:1px solid var(--line);
@@ -148,11 +144,21 @@
     content:"";
     position:absolute;
     inset:0;
+    background-image:url('novo-bg-hero.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    filter:saturate(.28) brightness(1.04);
+  }
+  .hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
     background:radial-gradient(60% 85% at 50% 42%,
-      rgba(251,249,245,.96) 0%,
-      rgba(251,249,245,.88) 45%,
-      rgba(251,249,245,.55) 72%,
-      rgba(251,249,245,.15) 100%);
+      rgba(247,249,252,.96) 0%,
+      rgba(247,249,252,.88) 45%,
+      rgba(247,249,252,.55) 72%,
+      rgba(247,249,252,.15) 100%);
   }
   .hero > .container{position:relative;z-index:1;}
   .hero-logo{
@@ -200,13 +206,13 @@
     border-radius:20px;
     padding:40px 30px 28px;
     display:flex;flex-direction:column;
-    box-shadow:0 1px 2px rgba(20,17,7,.04), 0 24px 44px -34px rgba(20,17,7,.22);
+    box-shadow:0 1px 2px rgba(7,18,46,.04), 0 24px 44px -34px rgba(7,18,46,.22);
     transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
   }
   .area-card:hover{
     transform:translateY(-6px);
     border-color:var(--accent-300);
-    box-shadow:0 1px 2px rgba(20,17,7,.05), 0 32px 54px -28px rgba(36,74,128,.32);
+    box-shadow:0 1px 2px rgba(7,18,46,.05), 0 32px 54px -28px rgba(36,74,128,.32);
   }
   .area-num{
     position:absolute;
@@ -411,7 +417,7 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="reveal is-visible">
-        <img src="logo.png" alt="Frizon Advogados" class="hero-logo">
+        <img src="logo-azul.png" alt="Frizon Advogados" class="hero-logo">
         <h1>Imposto de Renda, IPVA e Multas: conheça seus direitos</h1>
         <p class="hero-lead">
           Entenda seus direitos em situações relacionadas à <strong>isenção de Imposto de Renda por doença grave</strong>,
@@ -480,7 +486,7 @@
             irregularidades na autuação. Antes de pagar ou deixar a cobrança se tornar definitiva, avalie
             com a nossa equipe a possibilidade de anulação ou redução da penalidade.
           </p>
-          <div class="area-tags"><span>CREA</span><span>CRMV</span><span>CREFITO</span></div>
+          <div class="area-tags"><span>CREA</span><span>CRMV</span><span>CREFITO</span><span>e outros</span></div>
           <a href="#" class="area-cta js-whatsapp" data-msg="Olá! Recebi uma multa/autuação de um Conselho Profissional e gostaria de entender minhas opções de defesa.">
             Entenda as possibilidades de defesa
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -499,8 +505,9 @@
           </div>
           <h3>Isenção de IPVA para TEA</h3>
           <p>
-            Pais e responsáveis legais por pessoas com Transtorno do Espectro Autista podem solicitar a
-            isenção do IPVA no Paraná. Explicamos os critérios vigentes e a documentação necessária.
+            Pessoas com Transtorno do Espectro Autista (TEA), bem como seus pais ou responsáveis legais,
+            quando for o caso, podem solicitar a isenção do IPVA no Paraná. Explicamos os critérios vigentes
+            e a documentação necessária para realizar o pedido.
           </p>
           <div class="area-tags"><span>TEA</span><span>IPVA</span><span>Estado do Paraná</span></div>
           <a href="#" class="area-cta js-whatsapp" data-msg="Olá! Gostaria de entender os critérios para isenção de IPVA para pessoa com TEA no Paraná.">
