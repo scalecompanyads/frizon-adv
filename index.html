@@ -750,12 +750,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
   // ===== CONFIGURAÇÃO =====
-  // ALTERE AQUI o número de WhatsApp real da Frizon Advogados antes de publicar a página.
   // Formato: código do país + DDD + número, sem espaços, traços ou símbolos.
-  var WHATSAPP_NUMBER = "5543900000000"; // <-- PLACEHOLDER: substituir pelo número real
+  var WHATSAPP_NUMBER = "554388725623";
+  var WHATSAPP_DEFAULT_MESSAGE = "Olá! Vim pela página da Frizon Advogados e gostaria de falar com um especialista.";
 
   document.querySelectorAll(".js-whatsapp").forEach(function (el) {
-    var msg = el.getAttribute("data-msg") || "Olá! Gostaria de falar com um especialista da Frizon Advogados.";
+    var msg = WHATSAPP_DEFAULT_MESSAGE;
     el.setAttribute("href", "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg));
     el.setAttribute("target", "_blank");
     el.setAttribute("rel", "noopener");
